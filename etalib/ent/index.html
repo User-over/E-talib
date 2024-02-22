@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+<html lang="fr">
+
+<head>
+    <meta>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>E-talib</title>
+
+    <meta name="description" content="ESPACE NUMERIQUE ETALIB la solutoin de scolarité en ligne ">
+    <meta name="author" content="Bedata">
+
+    <link rel="shortcut icon" href="/etalib/resources/etalib.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="/etalib/resources/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="/etalib/resources/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/etalib/resources/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="/etalib/resources/assets/css/layout.min.css" rel="stylesheet" type="text/css">
+
+
+    <link href="/etalib/resources/assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="/etalib/resources/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
+
+
+
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script src="/etalib/resources/global_assets/js/main/jquery.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script src="/etalib/resources/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+
+    <script src="/etalib/resources/global_assets/js/plugins/extensions/rowlink.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/visualization/echarts/echarts.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/demo_pages/form_select2.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+
+    <script src="/etalib/resources/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/ui/fullcalendar/core/main.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/ui/fullcalendar/daygrid/main.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/ui/fullcalendar/timegrid/main.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/ui/fullcalendar/interaction/main.min.js"></script>
+
+    <script src="/etalib/resources/assets/js/app.js"></script>
+    <script src="/etalib/resources/global_assets/js/demo_pages/dashboard.js"></script>
+    <script src="/etalib/resources/global_assets/js/demo_pages/user_pages_profile_tabbed.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/editors/summernote/summernote.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/demo_pages/editor_summernote.js"></script>
+    <script src="/etalib/resources/global_assets/js/demo_pages/form_layouts.js"></script>
+
+    <script src="/etalib/resources/global_assets/js/plugins/notifications/pnotify.min.js"></script>
+
+    <script src="/etalib/resources/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-expand-md navbar-dark bg-indigo navbar-static">
+        <div class="navbar-brand" style='font-size:18px !important ;padding:10px;'>
+            <a href="#" class="d-inline-block">
+				<span style='color:white'>E-talib</span>
+			</a>
+        </div>
+
+
+        <div class="d-md-none">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-expanded="false">
+				<i class="icon-tree5"></i>
+			</button>
+            <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block legitRipple">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-md-auto">
+
+                <span class="navbar-text ml-md-3">
+				
+				Bonjour, EL KHAIDER!
+				<span class="badge bg-success ml-md-3 ">En ligne</span>
+                </span>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="navbar-nav-link dropdown-toggle legitRipple" data-toggle="dropdown" aria-expanded="false">
+						<i class="icon-make-group mr-2"></i>
+						<span style='background-color:#ff7043 !important;' class="badge badge-pill bg-warning-400  ml-md-0">
+						
+						0
+						</span> 
+						 Mes demandes
+					</a>
+
+                    <div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
+                        <div class="dropdown-content-header">
+                            <span class="font-size-sm line-height-sm text-uppercase font-weight-semibold">Demandes</span>
+
+                        </div>
+
+                        <div class="dropdown-content-body dropdown-scrollable">
+                            <ul class="media-list">
+
+
+
+
+                            </ul>
+                        </div>
+
+                        <div class="dropdown-content-footer justify-content-center p-0">
+
+                            <a href="/etalib/ent/demande/mesdemandes" class="bg-light text-grey w-100 py-2" data-popup="tooltip" title="" data-original-title="Afficher tout"><i class="icon-menu7 d-block top-0"></i></a>
+
+                        </div>
+
+
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/etalib/logout" class="navbar-nav-link legitRipple">
+						<i class="icon-switch2"></i>
+						<span class="d-md-none ml-2">Déconnexion</span>
+					</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-light sidebar-main sidebar-expand-md">
+
+            <!-- Sidebar mobile toggler -->
+            <div class="sidebar-mobile-toggler text-center">
+                <a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a> Navigation
+                <a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+            </div>
+            <!-- /sidebar mobile toggler -->
+
+
+            <!-- Sidebar content -->
+            <div class="sidebar-content">
+
+                <!-- User menu -->
+                <div class="sidebar-user-material">
+                    <div class="sidebar-user-material-body">
+                        <div class="card-body text-center">
+                            <a href="/etalib/ent/profil">
+				
+					
+							  
+							  
+							  
+							    <img src="/etalib/resources/assets/image/user.png" class="img-fluid rounded-circle" width="80" height="80" alt="">
+							
+							  
+							
+							
+							    
+								</a>
+                            <h6 class="mb-0 text-white text-shadow-dark">EL KHAIDER IMAD</h6>
+
+
+
+
+                            <span class="font-size-sm text-white text-shadow-dark"> CYCLE Licence - </span>
+
+
+
+                            <span class="font-size-sm text-white text-shadow-dark"> 3ème année Economie </span>
+
+
+                        </div>
+
+                        <div class="sidebar-user-material-footer">
+                            <a href="#user-nav" class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle legitRipple" data-toggle="collapse"><span>Mon Compte</span></a>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="user-nav">
+                        <ul class="nav nav-sidebar">
+                            <li class="nav-item">
+                                <a href="/etalib/ent/profil" class="nav-link legitRipple">
+									<i class="icon-user-plus"></i>
+									<span>Mon Profil</span>
+								</a>
+                            </li>
+
+                            <!-- <li class="nav-item">
+								<a href="/etalib/ent/demande/mesdemandes" class="nav-link legitRipple">
+									<i class="icon-help"></i>
+									<span>Mes Demande</span>
+									<span class="badge bg-teal-400 badge-pill align-self-center ml-auto">0</span>
+								</a>
+							</li>
+							
+							
+							<li class="nav-item">
+								<a href="/etalib/ent/avis/showAllAvis" class="nav-link legitRipple">
+									<i class="icon-newspaper"></i>
+									<span>Avis</span>
+									<span class="badge bg-teal-400 badge-pill align-self-center ml-auto">0</span>
+								</a>
+							</li>
+							 -->
+
+
+                            <li class="nav-item">
+                                <a href="/etalib/logout" class="nav-link legitRipple">
+									<i class="icon-switch2"></i>
+									<span>Déconnexion</span>
+								</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Main navigation -->
+                <div class="card card-sidebar-mobile">
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+
+                        <!-- Main -->
+                        <li class="nav-item-header">
+                            <div class="text-uppercase font-size-xs line-height-xs">Votre espace</div> <i class="icon-menu" title="Main"></i></li>
+                        <li class="nav-item">
+                            <a id="acceuil_menu" href="/etalib/ent/index" class="nav-link ">
+								<i class="icon-home4"></i>
+								<span>
+									Accueil
+								</span>
+							</a>
+                        </li>
+
+
+
+
+
+
+
+                        <li class="nav-item ">
+
+
+                            <a id="avis_menu" href="/etalib/ent/avis/showAllAvis" class="nav-link"><i class="icon-newspaper"></i> <span>Avis</span> 
+								<span class="badge bg-teal-400 badge-pill align-self-center ml-auto">0</span>
+								</a>
+                        </li>
+
+
+
+
+
+                        <li class="nav-item  ">
+                            <a id="emploi_menu" href="/etalib/ent/emploiTemps" class="nav-link "><i class="icon-calendar3"></i> <span>Emploi du temps</span></a>
+                        </li>
+
+
+
+
+
+
+                        <li class="nav-item ">
+                            <a id="demande_menu" href="/etalib/ent/demande/mesdemandes" class="nav-link"><i class="icon-stack2"></i> <span>Demandes de document</span>
+								
+								<span class="badge badge-primary  badge-pill align-self-center ml-auto">0</span>
+								</a>
+                        </li>
+
+
+
+
+
+
+                        <li class="nav-item">
+                            <a id="historiques" href="/etalib/ent/historique_notes" class="nav-link"><i class="icon-menu2"></i> <span>Historiques des Notes</span></a>
+                        </li>
+
+
+
+
+
+                        <li class="nav-item">
+                            <a id="inscriptions" href="/etalib/ent/inscription_pedagogique" class="nav-link"><i class="icon-graduation"></i> <span>Inscription Pédagogique</span></a>
+                        </li>
+
+
+
+                        <li class="nav-item">
+
+                            <a id="reclamation_menu" href="/etalib/ent/reclamation/mesReclamations" class="nav-link"><i class="icon-shield-notice"></i> <span>Réclamations</span>
+									<span class="badge badge-danger badge-pill align-self-center ml-auto">0</span>
+								</a>
+
+                        </li>
+
+
+
+
+
+
+
+                        <li class="nav-item">
+                            <a id="retrait_menu" href="/etalib/ent/retraitBac/mesdemandes" class="nav-link"><i class="icon-stack-minus"></i> <span>Retraits de Bac</span></a>
+                        </li>
+
+
+
+
+
+
+                        <li class="nav-item">
+                            <a id="convocation" href="/etalib/ent/convocation" class="nav-link"><i class="icon-printer2 "></i> <span>Convocation</span></a>
+                        </li>
+
+
+
+
+
+                        <li class="nav-item">
+                            <a id="resultat" href="/etalib/ent/resultat" class="nav-link"><i class="icon-indent-increase2"></i> <span>Résultats</span></a>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a href="/etalib/logout" class="nav-link">
+												<i class="icon-switch2"></i>
+												Déconnexion
+											</a>
+                        </li>
+
+
+
+
+
+
+
+
+                        <!-- /page kits -->
+
+                    </ul>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+            <!-- /sidebar content -->
+
+        </div>
+        <!-- /main sidebar -->
+
+
+
+
+
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header page-header-light">
+
+
+                <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+                    <div class="d-flex">
+                        <div class="breadcrumb">
+                            <a href="/etalib/ent/index" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Accueil</a>
+                            <span class="breadcrumb-item active"></span>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- /page header -->
+
+
+            <!-- Content area -->
+            <div class="content">
+
+                <!-- Main charts -->
+                <div class="row">
+                    <div class="col-xl-12">
+
+                        <!-- Traffic sources -->
+                        <div class="card">
+                            <div class="">
+                                <h6 class="card-title"> </h6>
+                                <div class="header-elements">
+                                    <div class="form-check form-check-right form-check-switchery form-check-switchery-sm">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body py-0">
+
+
+                                <div class="row no-gutters glyphs" style='margin-bottom:20px;'>
+
+
+
+
+                                    <div class="col-md-3 col-sm-3">
+
+                                        <div class="d-flex align-items-center">
+
+                                            <i class="icon-user mr-3 icon-2x"></i>
+                                            <a href='/etalib/ent/profil' style='color:black'>
+                                                <div>Profil </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="icon-menu2 mr-3 icon-2x"></i>
+                                            <a href='/etalib/ent/historique_notes' style='color:black'>
+                                                <div>Historiques des Notes </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="icon-graduation mr-3 icon-2x"></i>
+                                            <a href='/etalib/ent/inscription_pedagogique' style='color:black'>
+                                                <div>Inscription Pédagogique </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="icon-calendar3 mr-3 icon-2x"></i>
+                                            <a href='/etalib/ent/emploiTemps' style='color:black'>
+                                                <div>Emploi des temps </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="icon-newspaper mr-3 icon-2x"></i>
+                                            <a href='/etalib/ent/avis/showAllAvis' style='color:black'>
+                                                <div> Avis </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="icon-stack2 mr-3 icon-2x"></i>
+                                            <a href='/etalib/ent/demande/mesdemandes' style='color:black'>
+                                                <div>Demande de dcouments </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="icon-shield-notice mr-3 icon-2x"></i>
+                                            <a href='/etalib/ent/reclamation/mesReclamations' style='color:black'>
+                                                <div>Réclamations </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="icon-upload mr-3 icon-2x"></i>
+                                            <a href='/etalib/ent/retraitBac/mesdemandes' style='color:black'>
+                                                <div>Retrait BAC </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="icon-printer2 mr-3 icon-2x"></i>
+                                            <a href='/etalib/ent/convocation' style='color:black'>
+                                                <div>Convocation </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="icon-indent-increase2 mr-3 icon-2x"></i>
+                                            <a href='/etalib/ent/resultat' style='color:black'>
+                                                <div> Résultats </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+                        <!-- /traffic sources -->
+
+                    </div>
+
+
+                </div>
+                <!-- /main charts -->
+
+                <!-- /dashboard content -->
+
+            </div>
+            <!-- /content area -->
+
+            <script type="text/javascript">
+                $('#acceuil_menu').addClass('active');
+            </script>
+
+
+
+            <fmt:formatDate var="year" value="Mon Feb 19 16:29:32 WEST 2024" pattern="yyyy" />
+            <div class="navbar navbar-expand-lg navbar-light">
+                <div class="text-center d-lg-none w-100">
+                    <span class="navbar-text">
+						&copy; 2022. <a href="#">E-talib </a> 
+					</span>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navbar-footer">
+                    <span class="navbar-text">
+						&copy; 2022. <a href="#">E-talib </a> 
+					</span>
+
+
+                </div>
+            </div>
+            <!-- /footer -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</body>
+
+</html>

@@ -16,6 +16,15 @@ body {
     flex: 1
 }
 
+.form-group-feedback {
+    display: flex;
+    align-items: center;
+}
+
+.fa-lock {
+    color: #a6a6a6;
+}
+
 .page-content {
     display: -ms-flexbox;
     display: flex;

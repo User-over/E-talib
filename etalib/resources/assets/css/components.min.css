@@ -6,6 +6,15 @@ input[type=radio][data-fouc] {
     height: 1.25rem
 }
 
+.form-group-feedback {
+    display: flex;
+    align-items: center;
+}
+
+.fa-lock {
+    color: #a6a6a6;
+}
+
 .form-check input[type=checkbox][data-fouc],
 .form-check input[type=radio][data-fouc] {
     position: absolute

@@ -867,7 +867,7 @@ select[size] option+option {
 }
 
 .form-group-feedback-left .form-control-feedback {
-    left: 5
+    left: 0
 }
 
 .form-group-feedback-left .form-control {
@@ -900,7 +900,7 @@ select[size] option+option {
 
 .form-control-feedback {
     position: absolute;
-    top: 25%;
+    top: 29%;
     color: #333;
     padding-left: .875rem;
     padding-right: .875rem;

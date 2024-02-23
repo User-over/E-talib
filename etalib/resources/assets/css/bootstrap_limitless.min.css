@@ -900,7 +900,7 @@ select[size] option+option {
 
 .form-control-feedback {
     position: absolute;
-    top: 35%;
+    top: 0.7rem;
     color: #333;
     padding-left: .875rem;
     padding-right: .875rem;

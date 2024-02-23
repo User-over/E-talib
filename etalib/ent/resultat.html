@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="fr">
+
+<head>
+    <meta>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>E-talib</title>
+
+    <meta name="description" content="ESPACE NUMERIQUE ETALIB la solutoin de scolarité en ligne ">
+    <meta name="author" content="Bedata">
+
+    <link rel="shortcut icon" href="/etalib/resources/etalib.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="/etalib/resources/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="/etalib/resources/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/etalib/resources/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="/etalib/resources/assets/css/layout.min.css" rel="stylesheet" type="text/css">
+
+
+    <link href="/etalib/resources/assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="/etalib/resources/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
+
+
+
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script src="/etalib/resources/global_assets/js/main/jquery.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script src="/etalib/resources/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+
+    <script src="/etalib/resources/global_assets/js/plugins/extensions/rowlink.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/visualization/echarts/echarts.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/demo_pages/form_select2.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+
+    <script src="/etalib/resources/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/ui/fullcalendar/core/main.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/ui/fullcalendar/daygrid/main.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/ui/fullcalendar/timegrid/main.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/ui/fullcalendar/interaction/main.min.js"></script>
+
+    <script src="/etalib/resources/assets/js/app.js"></script>
+    <script src="/etalib/resources/global_assets/js/demo_pages/dashboard.js"></script>
+    <script src="/etalib/resources/global_assets/js/demo_pages/user_pages_profile_tabbed.js"></script>
+    <script src="/etalib/resources/global_assets/js/plugins/editors/summernote/summernote.min.js"></script>
+    <script src="/etalib/resources/global_assets/js/demo_pages/editor_summernote.js"></script>
+    <script src="/etalib/resources/global_assets/js/demo_pages/form_layouts.js"></script>
+
+    <script src="/etalib/resources/global_assets/js/plugins/notifications/pnotify.min.js"></script>
+
+    <script src="/etalib/resources/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-expand-md navbar-dark bg-indigo navbar-static">
+        <div class="navbar-brand" style='font-size:18px !important ;padding:10px;'>
+            <a href="#" class="d-inline-block">
+				<span style='color:white'>E-talib</span>
+			</a>
+        </div>
+
+
+        <div class="d-md-none">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-expanded="false">
+				<i class="icon-tree5"></i>
+			</button>
+            <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block legitRipple">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-md-auto">
+
+                <span class="navbar-text ml-md-3">
+				
+				Bonjour, EL KHAIDER!
+				<span class="badge bg-success ml-md-3 ">En ligne</span>
+                </span>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="navbar-nav-link dropdown-toggle legitRipple" data-toggle="dropdown" aria-expanded="false">
+						<i class="icon-make-group mr-2"></i>
+						<span style='background-color:#ff7043 !important;' class="badge badge-pill bg-warning-400  ml-md-0">
+						
+						0
+						</span> 
+						 Mes demandes
+					</a>
+
+                    <div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
+                        <div class="dropdown-content-header">
+                            <span class="font-size-sm line-height-sm text-uppercase font-weight-semibold">Demandes</span>
+
+                        </div>
+
+                        <div class="dropdown-content-body dropdown-scrollable">
+                            <ul class="media-list">
+
+
+
+
+                            </ul>
+                        </div>
+
+                        <div class="dropdown-content-footer justify-content-center p-0">
+
+                            <a href="/etalib/ent/demande/mesdemandes" class="bg-light text-grey w-100 py-2" data-popup="tooltip" title="" data-original-title="Afficher tout"><i class="icon-menu7 d-block top-0"></i></a>
+
+                        </div>
+
+
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/etalib/logout" class="navbar-nav-link legitRipple">
+						<i class="icon-switch2"></i>
+						<span class="d-md-none ml-2">Déconnexion</span>
+					</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-light sidebar-main sidebar-expand-md">
+
+            <!-- Sidebar mobile toggler -->
+            <div class="sidebar-mobile-toggler text-center">
+                <a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a> Navigation
+                <a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+            </div>
+            <!-- /sidebar mobile toggler -->
+
+
+            <!-- Sidebar content -->
+            <div class="sidebar-content">
+
+                <!-- User menu -->
+                <div class="sidebar-user-material">
+                    <div class="sidebar-user-material-body">
+                        <div class="card-body text-center">
+                            <a href="/etalib/ent/profil">
+				
+					
+							  
+							  
+							  
+							    <img src="/etalib/resources/assets/image/user.png" class="img-fluid rounded-circle" width="80" height="80" alt="">
+							
+							  
+							
+							
+							    
+								</a>
+                            <h6 class="mb-0 text-white text-shadow-dark">EL KHADIRI OMAR</h6>
+
+
+
+
+                            <span class="font-size-sm text-white text-shadow-dark"> CYCLE Licence - </span>
+
+
+
+                            <span class="font-size-sm text-white text-shadow-dark"> 3ème année Economie </span>
+
+
+                        </div>
+
+                        <div class="sidebar-user-material-footer">
+                            <a href="#user-nav" class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle legitRipple" data-toggle="collapse"><span>Mon Compte</span></a>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="user-nav">
+                        <ul class="nav nav-sidebar">
+                            <li class="nav-item">
+                                <a href="/etalib/ent/profil" class="nav-link legitRipple">
+									<i class="icon-user-plus"></i>
+									<span>Mon Profil</span>
+								</a>
+                            </li>
+
+                            <!-- <li class="nav-item">
+								<a href="/etalib/ent/demande/mesdemandes" class="nav-link legitRipple">
+									<i class="icon-help"></i>
+									<span>Mes Demande</span>
+									<span class="badge bg-teal-400 badge-pill align-self-center ml-auto">0</span>
+								</a>
+							</li>
+							
+							
+							<li class="nav-item">
+								<a href="/etalib/ent/avis/showAllAvis" class="nav-link legitRipple">
+									<i class="icon-newspaper"></i>
+									<span>Avis</span>
+									<span class="badge bg-teal-400 badge-pill align-self-center ml-auto">0</span>
+								</a>
+							</li>
+							 -->
+
+
+                            <li class="nav-item">
+                                <a href="/etalib/logout" class="nav-link legitRipple">
+									<i class="icon-switch2"></i>
+									<span>Déconnexion</span>
+								</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <!-- Main navigation -->
+                <div class="card card-sidebar-mobile">
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+
+                        <!-- Main -->
+                        <li class="nav-item-header">
+                            <div class="text-uppercase font-size-xs line-height-xs">Votre espace</div> <i class="icon-menu" title="Main"></i></li>
+                        <li class="nav-item">
+                            <a id="acceuil_menu" href="/etalib/ent/index" class="nav-link ">
+								<i class="icon-home4"></i>
+								<span>
+									Accueil
+								</span>
+							</a>
+                        </li>
+
+
+
+
+
+
+
+                        <li class="nav-item ">
+
+
+                            <a id="avis_menu" href="/etalib/ent/avis/showAllAvis" class="nav-link"><i class="icon-newspaper"></i> <span>Avis</span> 
+								<span class="badge bg-teal-400 badge-pill align-self-center ml-auto">0</span>
+								</a>
+                        </li>
+
+
+
+
+
+                        <li class="nav-item  ">
+                            <a id="emploi_menu" href="/etalib/ent/emploiTemps" class="nav-link "><i class="icon-calendar3"></i> <span>Emploi du temps</span></a>
+                        </li>
+
+
+
+
+
+
+                        <li class="nav-item ">
+                            <a id="demande_menu" href="/etalib/ent/demande/mesdemandes" class="nav-link"><i class="icon-stack2"></i> <span>Demandes de document</span>
+								
+								<span class="badge badge-primary  badge-pill align-self-center ml-auto">0</span>
+								</a>
+                        </li>
+
+
+
+
+
+
+                        <li class="nav-item">
+                            <a id="historiques" href="/etalib/ent/historique_notes" class="nav-link"><i class="icon-menu2"></i> <span>Historiques des Notes</span></a>
+                        </li>
+
+
+
+
+
+                        <li class="nav-item">
+                            <a id="inscriptions" href="/etalib/ent/inscription_pedagogique" class="nav-link"><i class="icon-graduation"></i> <span>Inscription Pédagogique</span></a>
+                        </li>
+
+
+
+                        <li class="nav-item">
+
+                            <a id="reclamation_menu" href="/etalib/ent/reclamation/mesReclamations" class="nav-link"><i class="icon-shield-notice"></i> <span>Réclamations</span>
+									<span class="badge badge-danger badge-pill align-self-center ml-auto">0</span>
+								</a>
+
+                        </li>
+
+
+
+
+
+
+
+                        <li class="nav-item">
+                            <a id="retrait_menu" href="/etalib/ent/retraitBac/mesdemandes" class="nav-link"><i class="icon-stack-minus"></i> <span>Retraits de Bac</span></a>
+                        </li>
+
+
+
+
+
+
+                        <li class="nav-item">
+                            <a id="convocation" href="/etalib/ent/convocation" class="nav-link"><i class="icon-printer2 "></i> <span>Convocation</span></a>
+                        </li>
+
+
+
+
+
+                        <li class="nav-item">
+                            <a id="resultat" href="/etalib/ent/resultat" class="nav-link"><i class="icon-indent-increase2"></i> <span>Résultats</span></a>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a href="/etalib/logout" class="nav-link">
+												<i class="icon-switch2"></i>
+												Déconnexion
+											</a>
+                        </li>
+
+
+
+
+
+
+
+
+                        <!-- /page kits -->
+
+                    </ul>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+            <!-- /sidebar content -->
+
+        </div>
+        <!-- /main sidebar -->
+
+        <script src="/etalib/resources/global_assets/js/plugins/notifications/bootbox.min.js"></script>
+        <script src="/etalib/resources/global_assets/js/demo_pages/components_modals.js"></script>
+        <script src="/etalib/resources/assets/js/pdfobject.min.js"></script>
+        <script src="/etalib/resources/assets/js/jquery.countdown.min.js"></script>
+
+
+
+
+
+        <style type="text/css">
+            .pdfobject-container {
+                height: 40rem;
+                border: 1rem solid rgba(0, 0, 0, .1);
+            }
+
+            .pnotify-center {
+                right: calc(50% - 150px) !important;
+                top: calc(50% - 150px) !important;
+            }
+        </style>
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header page-header-light">
+
+
+                <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+                    <div class="d-flex">
+                        <div class="breadcrumb">
+                            <a href="/etalib/ent/index" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Accueil</a>
+                            <a href="#" class="breadcrumb-item">Résultats</a>
+                        </div>
+
+                        <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- /page header -->
+
+            <!-- Content area -->
+            &nbsp;
+
+
+
+            <!-- Content area -->
+            <div class="content">
+
+                <!-- Inner container -->
+
+
+
+
+
+
+
+                <div class="tab-content  overflow-auto">
+                    <div class="tab-pane fade active show" id="profile">
+
+
+                        <!-- /sales stats -->
+
+
+
+
+                        <!-- Profile info -->
+                        <div class="card">
+
+
+                            <div class="card-body">
+
+                                <div class="table-responsive">
+
+
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr class="bg-indigo-400">
+
+
+
+                                                <th>Code Apogée : 21014052 </th>
+                                                <th colspan="3">
+                                                    CYCLE Licence - Etape : 3ème année Economie
+
+                                                </th>
+
+                                            </tr>
+
+                                            <tr class="bg-indigo-400">
+                                                <th>Nom : EL KHADIRE </th>
+                                                <th>Prénom : OMAR </th>
+                                                <th>CIN : BF16042 </th>
+                                                <th>CNE : R137065998 </th>
+
+                                            </tr>
+
+                                        </thead>
+                                    </table>
+
+
+
+                                    <p><br><br>
+
+
+                                        <b>Aprés la consultation des notes avant délibération , vous avez un délais de 48 Heures pour déposer une réclamation sur le présent site  </b>
+                                    </p>
+
+
+
+
+                                 
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" style='margin-top:10px;'>
+                                            <thead>
+                                                <tr class="bg-indigo-400">
+                                                    <th colspan="6"> Semestre 5 Economie </th>
+                                                    <th rowspan="2">Réclamation</th>
+                                                    <th colspan="2">Réponse</th>
+
+                                                </tr>
+
+
+                                                <tr class="bg-indigo-400">
+                                                    <th>N° Module</th>
+                                                    <th>Elément de module</th>
+                                                    <th>Note SS1</th>
+                                                    <th>Note SS2</th>
+                                                    <th>Note finale</th>
+                                                    <th>Appréciation</th>
+                                                    <th>Note trouvée </th>
+                                                    <th>Réponse</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+
+                                                    <td>HFE35104
+
+                                                    </td>
+                                                    <td>Histoire de la Pensée Economique
+                                                    </td>
+                                                    <td>1.0</td>
+                                                    <td></td>
+
+                                                    <td>
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+                                                        RAT
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+
+
+
+                                                    </td>
+
+
+                                                    <td>
+
+
+
+                                                    </td>
+
+                                                    <td>
+
+
+                                                    </td>
+
+
+
+
+                                                </tr>
+
+
+                                                <tr>
+
+                                                    <td>HFE35204
+
+                                                    </td>
+                                                    <td>Entrepreneuriat / Marketing - Entrepreneuriat
+                                                    </td>
+                                                    <td>14.67</td>
+                                                    <td></td>
+
+                                                    <td>
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+                                                        MV
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+
+
+
+                                                    </td>
+
+
+                                                    <td>
+
+
+
+                                                    </td>
+
+                                                    <td>
+
+
+                                                    </td>
+
+
+
+
+                                                </tr>
+
+
+                                                <tr>
+
+                                                    <td>HFE35214
+
+                                                    </td>
+                                                    <td>Entrepreneuriat / Marketing
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+
+                                                    <td>
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+
+
+
+                                                    </td>
+
+
+                                                    <td>
+
+
+
+                                                    </td>
+
+                                                    <td>
+
+
+                                                    </td>
+
+
+
+
+                                                </tr>
+
+
+                                                <tr>
+
+                                                    <td>HFE35304
+
+                                                    </td>
+                                                    <td>Entrepreneuriat / Marketing - Marketing app
+                                                    </td>
+                                                    <td>13.0</td>
+                                                    <td></td>
+
+                                                    <td>
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+                                                        MV
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+
+
+
+                                                    </td>
+
+
+                                                    <td>
+
+
+
+                                                    </td>
+
+                                                    <td>
+
+
+                                                    </td>
+
+
+
+
+                                                </tr>
+
+
+                                                <tr>
+
+                                                    <td>HFE35404
+
+                                                    </td>
+                                                    <td> Comptabilité Nationale
+                                                    </td>
+                                                    <td>18.0</td>
+                                                    <td></td>
+
+                                                    <td>
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+                                                        MV
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+
+
+
+                                                    </td>
+
+
+                                                    <td>
+
+
+
+                                                    </td>
+
+                                                    <td>
+
+
+                                                    </td>
+
+
+
+
+                                                </tr>
+
+
+                                                <tr>
+
+                                                    <td>HFE35504
+
+                                                    </td>
+                                                    <td>Gestion financière
+                                                    </td>
+                                                    <td>12.0</td>
+                                                    <td></td>
+
+                                                    <td>
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+                                                        MV
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+
+
+
+                                                    </td>
+
+
+                                                    <td>
+
+
+
+                                                    </td>
+
+                                                    <td>
+
+
+                                                    </td>
+
+
+
+
+                                                </tr>
+
+
+                                                <tr>
+
+                                                    <td>HFE35604
+
+                                                    </td>
+                                                    <td>Gestion des Ressources Humaines
+                                                    </td>
+                                                    <td>14.74</td>
+                                                    <td></td>
+
+                                                    <td>
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+                                                        MV
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+
+
+
+                                                    </td>
+
+
+                                                    <td>
+
+
+
+                                                    </td>
+
+                                                    <td>
+
+
+                                                    </td>
+
+
+
+
+                                                </tr>
+
+
+                                                <tr>
+
+                                                    <td>HFE35704
+
+                                                    </td>
+                                                    <td>Fiscalité
+                                                    </td>
+                                                    <td>10.0</td>
+                                                    <td></td>
+
+                                                    <td>
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+                                                        MV
+
+                                                    </td>
+
+                                                    <td>
+
+
+
+
+
+
+                                                    </td>
+
+
+                                                    <td>
+
+
+
+                                                    </td>
+
+                                                    <td>
+
+
+                                                    </td>
+
+
+
+
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                            <!-- /profile info -->
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- /dashboard content -->
+
+
+            </div>
+
+
+
+            <!-- /content area -->
+
+
+
+            <fmt:formatDate var="year" value="Fri Feb 23 16:17:48 WEST 2024" pattern="yyyy" />
+            <div class="navbar navbar-expand-lg navbar-light">
+                <div class="text-center d-lg-none w-100">
+                    <span class="navbar-text">
+						&copy; 2022. <a href="#">E-talib </a> 
+					</span>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navbar-footer">
+                    <span class="navbar-text">
+						&copy; 2022. <a href="#">E-talib </a> 
+					</span>
+
+
+                </div>
+            </div>
+            <!-- /footer -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</body>
+
+</html>
+<script type="text/javascript">
+    function openPdfFile(code) {
+
+        $.ajax({
+
+            type: "GET",
+            async: false,
+            url: "/etalib/ent/convocation/download",
+            success: function(data) {
+                data = base64ToArrayBuffer(data);
+                var file = new Blob([data], {
+                    type: 'application/pdf'
+                });
+                var fileURL = window.URL.createObjectURL(file);
+
+                $('#modal_full').modal('show');
+                //PDFObject.embed(fileURL, "#modal_pdf");
+                document.querySelector("iframe").src = fileURL;
+
+
+            }
+
+
+        });
+    }
+
+    function base64ToArrayBuffer(base64) {
+        var binaryString = window.atob(unescape(encodeURIComponent(base64)));
+        var binaryLen = binaryString.length;
+        var bytes = new Uint8Array(binaryLen);
+        for (var i = 0; i < binaryLen; i++) {
+            var ascii = binaryString.charCodeAt(i);
+            bytes[i] = ascii;
+        }
+        return bytes;
+    }
+
+
+    $('#resultat').addClass('active');
+    $('.datatable-basic').DataTable({
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.20/i18n/French.json"
+        }
+    });
+</script>

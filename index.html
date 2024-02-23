@@ -1,6 +1,5 @@
 <html lang='fr'>
 
-
 <head>
 
 
@@ -53,14 +52,12 @@
 
                         <div class="col-xs-6">
                             <a href="/"><img style="margin-top:-10px;width:70%"
-												src="etalib/resources/assets/image/logo_app.png"
-												alt="logo" class=" "></a>
+                                    src="etalib/resources/assets/image/logo_app.png" alt="logo" class=" "></a>
 
                         </div>
                         <div class="col-xs-6">
                             <a href="/"><img style="margin-top:15px;width:70%;margin-left:60px;"
-												src="etalib/resources/assets/image/logo_fdc.png"
-												alt="logo" class=" "></a>
+                                    src="etalib/resources/assets/image/logo_fdc.png" alt="logo" class=" "></a>
                         </div>
 
                     </div>
@@ -68,16 +65,11 @@
                     <div class="d-flex justify-content-center align-items-center">
 
                         <!-- Login form -->
-
-
-                        <form class="login-form wmin-sm-400" action="ent/j_spring_security_check" method="post">
+                        <form id="loginForm" class="login-form wmin-sm-400" action="etalib/ent/resultat.html"
+                            method="post">
                             <div class="">
 
                                 <div style=''>
-
-
-
-
 
 
 
@@ -97,38 +89,43 @@
                                             <h4 class="text-dark font-weight-normal">
                                                 Bienvenue sur <span class="font-weight-bold">Etalib</span>
                                             </h4>
-                                            <p class="text-muted">ESPACE NUMERIQUE ETALIB, la solutoin de scolarité en ligne de la Faculté des sciences juridiques, économiques et sociales de Casablanca (FSJES Ain Chok)</p>
+                                            <p class="text-muted">ESPACE NUMERIQUE ETALIB, la solutoin de
+                                                scolarité en ligne de la Faculté des sciences juridiques,
+                                                économiques et sociales de Casablanca (FSJES Ain Chok)</p>
 
                                         </div>
 
                                         <div class="form-group form-group-feedback form-group-feedback-left">
-                                            <input type="text" name="j_username" class="form-control" placeholder="login (code Apogée)" required>
+                                            <input type="text" name="j_username" class="form-control"
+                                                placeholder="login (code Apogée)" required>
                                             <div class="form-control-feedback">
                                                 <i class="fa-solid fa-user" style="color: #a6a6a6;"></i>
                                             </div>
                                         </div>
 
                                         <div class="form-group form-group-feedback form-group-feedback-left">
-                                            <input type="password" class="form-control" name="j_password" placeholder="mot de passe (CIN)" required>
+                                            <input type="password" class="form-control" name="j_password"
+                                                placeholder="mot de passe (CIN)" required>
                                             <div class="form-control-feedback">
-                                                 <i class="fa-solid fa-lock" style="color: #a6a6a6;"></i>
+                                                <i class="fa-solid fa-lock" style="color: #a6a6a6;"></i>
                                             </div>
                                         </div>
 
                                         <div class="form-group d-flex align-items-center">
                                             <div class="form-check mb-0">
-                                                <label class="form-check-label"> <input
-													type="checkbox" name="j_spring_security_remember_me"
-													class="form-input-styled"> Se souvenir de moi ?
-												</label>
+                                                <label class="form-check-label"> <input type="checkbox"
+                                                        name="j_spring_security_remember_me"
+                                                        class="form-input-styled"> Se souvenir de moi ?
+                                                </label>
                                             </div>
 
 
                                         </div>
 
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-block">Se
-												connecter</button>
+                                            <button type="button" onclick="submitForm()"
+                                                class="btn btn-primary btn-block">Se
+                                                connecter</button>
                                         </div>
 
 
@@ -146,12 +143,16 @@
                 </div>
 
 
-                <div class="col-lg-7 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom" data-background="etalib/resources/assets/image/fac_image.jpg" style="background-image: url(etalib/resources/assets/image/fac_image.jpg);">
+                <div class="col-lg-7 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom"
+                    data-background="etalib/resources/assets/image/fac_image.jpg"
+                    style="background-image: url(etalib/resources/assets/image/fac_image.jpg);">
                     <div class="absolute-bottom-left index-2">
                         <div class="text-light p-5 pb-2">
                             <div class="mb-6 pb-3">
-                                <h1 class="mb-2 display-5 font-weight-bold">Faculté des sciences juridiques, économiques et sociales</h1>
-                                <h5 class="font-weight-normal text-muted-transparent">FSJES d'Ain Chok Casablanca, Maroc</h5>
+                                <h1 class="mb-2 display-5 font-weight-bold">Faculté des sciences juridiques,
+                                    économiques et sociales</h1>
+                                <h5 class="font-weight-normal text-muted-transparent">FSJES d'Ain Chok Casablanca,
+                                    Maroc</h5>
                             </div>
                         </div>
                     </div>
@@ -165,6 +166,17 @@
 
     </div>
     <!-- /page content -->
+
+<script>
+function submitForm() {
+    var username = document.getElementsByName('j_username')[0].value;
+    var password = document.getElementsByName('j_password')[0].value;
+
+    if (username !== '' && password !== '') {
+        document.getElementById('loginForm').submit();
+    
+}
+</script>
 
 </body>
 
